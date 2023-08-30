@@ -3,9 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naan</title>
+    <title>Garlic Naan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            color: white;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:end;
+            gap: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #heading {
+            margin-top: 30px;
+            font-size: 45px;
+        }
+        .container img {
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.25);
+            border: 2px solid white;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .ingredients ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 25px);
+            list-style-type: "->  ";
+        }
+        .directions ol {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 5px;
+        }
+        .home {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 15px;
+            box-shadow: inset 0px 0px 10px 8px rgba(255, 255, 255, 0.25);
+            border: 2px solid white;
+            border-radius: 10px;
+            display: grid;
+            place-content: center;
+            transition: all 0.3s linear;
+        }
+        .home:hover{
+            background-color: white;
+        }
+        .home a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        .home:hover a{
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Naan</h1>
+    <div class="container">
+        <div class="home">
+            <a href="../index.html">Home</a>
+        </div>
+        <h1 id="heading">Garlic Naan</h1>
+        <img src="../images/naan.jpg" alt="Garlic Naan" width="600px" height="400px">
+        <div class="text">
+            <div class="desrciption">
+                <h2>Description</h2>
+                <p>I am going to show you how to make naan Chef John-style—when I want it fast and I don't want to use yeast and wait for a dough to rise but I also want it just as good as if I did.</p>
+                <p>While I originally tried this method to save time, it produces what might be my favorite style of naan. It really is incredible whether you use garlic and green onions, or not.</p>
+                <p>As naan are made, they must be stacked and wrapped in a kitchen towel to keep them soft and supple.</p>
+            </div>
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 ½ cups bread flour, plus more as needed</li>
+                    <li>½ teaspoon kosher salt</li>
+                    <li>2 teaspoons baking powder</li>
+                    <li>1 cup plain Greek yogurt</li>
+                    <li>4 cloves garlic, crushed</li>
+                    <li>½ cup thinly sliced green onions</li>
+                    <li>2 tablespoons melted butter</li>
+                </ul>
+            </div>
+            <div class="directions">
+                <h2>Directions</h2>
+                <ol>
+                    <li>
+                        <h4>Step 1 -></h4>
+                        <p>Place bread flour in a bowl. Add salt and baking powder and give it a good whisk until evenly combined.</p>
+                    </li>
+                    <li>
+                        <h4>Step 2 -></h4>
+                        <p>Add in Greek yogurt gently, followed by garlic and green onions. Take a wooden spoon and slowly start mixing everything together. Keep mixing, stirring, and pressing until a shaggy dough forms.</p>
+                    </li>
+                    <li>
+                        <h4>Step 3 -></h4>
+                        <p>Transfer dough to a work surface and use your hands to press dough together. Knead for a few minutes until dough becomes elastic and a little bit sticky. </p>
+                    </li>
+                    <li>
+                        <h4>Step 4 -></h4>
+                        <p>Add a bit more flour as necessary but try to keep extra flour at an absolute minimum. Knead until dough is a little bit stretchy, 3 to 5 minutes. Wrap in plastic and allow to rest on the counter for 15 to 20 minutes.</p>
+                    </li>
+                    <li>
+                        <h4>Step 5 -></h4>
+                        <p>Take a bench scraper and cut into 6 equal pieces. Take 1 portion and roll into a ball. Place onto a generously floured surface.</p>
+                    </li>
+                    <li>
+                        <h4>Step 6 -></h4>
+                        <p>Use a rolling pin to roll out nice and thin, about 1/8 inch or less. It's ok if the naan is not a perfect circle. You will need extra flour for rolling out as the dough is sticky, but try to use as little as possible.</p>
+                    </li>
+                    <li>
+                        <h4>Step 7 -></h4>
+                        <p>Heat a cast iron skillet over medium-high heat until hot. Transfer dough circles into the hot dry skillet and cook until little bubbles form on the surface and the underside is lightly browned, about 1 minute.</p>
+                    </li>
+                    <li>
+                        <h4>Step 8 -></h4>
+                        <p>Flip naan over and cook for 1 more min. Press down slightly with a spatula. Flip over twice more and cook for an additional 15 secs per side, but make sure not to overcook.</p>
+                    </li>
+                    <li>
+                        <h4>Step 9 -></h4>
+                        <p>Cover with a kitchen towel to keep warm and moist while you cook the other naan breads. Stack all 6 naan breads on top of each other and keep covered with a kitchen towel.</p>
+                    </li>
+                    <li>
+                        <h4>Step 10 -></h4>
+                        <p>When you are finished cooking all 6 naan breads, unstack breads and brush the first naan bread on both sides with a little bit of melted butter.</p>
+                    </li>
+                    <li>
+                        <h4>Step 11 -></h4>
+                        <p>Stack second piece of naan on top and only brush the top side. Keep stacking and buttering all the naan breads. Fold each naan into a triangle and serve.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
