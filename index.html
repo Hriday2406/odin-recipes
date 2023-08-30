@@ -59,10 +59,39 @@
             color: black;
             font-weight: bold;
         }
+        .name {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            padding: 15px;
+            box-shadow: inset 0px 0px 10px 8px rgba(255, 255, 255, 0.25);
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: grid;
+            place-content: center;
+            transition: all 0.3s linear;
+        }
+        .name:hover{
+            background-color: white;
+            transform: scale(1.25);
+        }
+        .name p{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        .name:hover p{
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="name">
+            <p>Made by Hriday</p>
+        </div>
         <h1>Odin Recipes</h1>
         <img src="images/homepage-pic.jpg" alt="Spoonful of Indian Spices" width="600px" height="400px">
         <ul>

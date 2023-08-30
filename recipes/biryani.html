@@ -73,12 +73,41 @@
         .home:hover a{
             color: black;
         }
+        .name {
+            position: fixed;
+            top: 25px;
+            right: 25px;
+            padding: 15px;
+            box-shadow: inset 0px 0px 10px 8px rgba(255, 255, 255, 0.25);
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: grid;
+            place-content: center;
+            transition: all 0.3s linear;
+        }
+        .name:hover{
+            background-color: white;
+            transform: scale(1.25);
+        }
+        .name p{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        .name:hover p{
+            color: black;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="home">
             <a href="../index.html">Home</a>
+        </div>
+        <div class="name">
+            <p>Made by Hriday</p>
         </div>
         <h1 id="heading">Chicken Biryani</h1>
         <img src="../images/biryani.jpg" alt="Chicken Biryani" width="600px" height="400px">
