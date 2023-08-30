@@ -4,8 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Butter Chicken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            color: white;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:end;
+            gap: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #heading {
+            margin-top: 30px;
+            font-size: 45px;
+        }
+        .container img {
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.25);
+            border: 2px solid white;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .ingredients ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 25px);
+            list-style-type: "->  ";
+        }
+        .directions ol {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 5px;
+        }
+        .home {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 15px;
+            box-shadow: inset 0px 0px 10px 8px rgba(255, 255, 255, 0.25);
+            border: 2px solid white;
+            border-radius: 10px;
+            display: grid;
+            place-content: center;
+            transition: all 0.3s linear;
+        }
+        .home:hover{
+            background-color: white;
+        }
+        .home a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        .home:hover a{
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Butter Chicken</h1>
+    <div class="container">
+        <div class="home">
+            <a href="../index.html">Home</a>
+        </div>
+        <h1 id="heading">Butter Chicken</h1>
+        <img src="../images/butter.jpg" alt="Butter Chicken" width="600px" height="400px">
+        <div class="text">
+            <div class="desrciption">
+                <h2>Description</h2>
+                <p>This butter chicken recipe is so delicious, flavorful, and easy to prepare at home. My entire family loves this curry. Serve over warm basmati rice along with some naan bread for a delicious Indian meal.</p>
+            </div>
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 teaspoons garam masala</li>
+                    <li>2 teaspoons tandoori masala powder</li>
+                    <li>2 teaspoons Madras curry powder </li>
+                    <li>1 teaspoon ground cumin </li>
+                    <li>½ teaspoon ground cardamom </li>
+                    <li>½ teaspoon ground cayenne pepper</li>
+                    <li>salt and ground black pepper to taste </li>
+                    <li>1 ½ pounds boneless chicken thighs, cut into cubes </li>
+                    <li>3 tablespoons butter, divided</li>
+                    <li>1 yellow onion, chopped </li>
+                    <li>4 cloves garlic, minced</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>2 teaspoons chopped fresh ginger </li>
+                    <li>1 cup tomato puree </li>
+                    <li>1 cup half-and-half </li>
+                    <li>¼ cup plain yogurt </li>
+                    <li>⅓ cup cashews</li>
+                </ul>
+            </div>
+            <div class="directions">
+                <h2>Directions</h2>
+                <ol>
+                    <li>
+                        <h4>Step 1 -></h4>
+                        <p>Make a spice mix by combining garam masala, tandoori masala, curry powder, cumin, cardamom, cayenne, salt, and black pepper in a small bowl; set aside.</p>
+                    </li>
+                    <li>
+                        <h4>Step 2 -></h4>
+                        <p>Place chicken in a large bowl and add 1/2 of the spice mixture; turn to coat evenly.</p>
+                    </li>
+                    <li>
+                        <h4>Step 3 -></h4>
+                        <p>Melt 1 tablespoon butter in a large skillet over medium heat. Add chicken; cook and stir until lightly browned, about 10 minutes. Remove from heat.</p>
+                    </li>
+                    <li>
+                        <h4>Step 4 -></h4>
+                        <p>Melt remaining 2 tbsp butter in a large saucepan over medium heat. Add onion; cook and stir until soft and translucent, about 5 minutes. </p>
+                    </li>
+                    <li>
+                        <h4>Step 5 -></h4>
+                        <p>Stir in remainder of the spice mixture, garlic, lemon juice, and ginger; cook and stir until combined, about 1 minute.</p>
+                    </li>
+                    <li>
+                        <h4>Step 6 -></h4>
+                        <p>Stir tomato puree into onion mixture and cook, stirring frequently, about 2 minutes. Pour in half-and-half and yogurt. Reduce heat to low and simmer sauce, stirring frequently, about 10 minutes. Remove from heat.</p>
+                    </li>
+                    <li>
+                        <h4>Step 7 -></h4>
+                        <p>Blend cashews in a blender until finely ground. Add sauce to the blender; puree until smooth.</p>
+                    </li>
+                    <li>
+                        <h4>Step 8 -></h4>
+                        <p>Pour blended sauce over chicken in the skillet. Simmer until thickened, 10 to 15 minutes. Garnish with cilantro.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
