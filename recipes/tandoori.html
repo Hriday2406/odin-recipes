@@ -4,8 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tandoori Chicken</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            color: white;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:end;
+            gap: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        #heading {
+            margin-top: 30px;
+            font-size: 45px;
+        }
+        .container img {
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px 5px rgba(255, 255, 255, 0.25);
+            border: 2px solid white;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .ingredients ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 25px);
+            list-style-type: "->  ";
+        }
+        .directions ol {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .home {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 15px;
+            box-shadow: inset 0px 0px 10px 8px rgba(255, 255, 255, 0.25);
+            border: 2px solid white;
+            border-radius: 10px;
+            display: grid;
+            place-content: center;
+            transition: all 0.3s linear;
+        }
+        .home:hover{
+            background-color: white;
+        }
+        .home a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s linear;
+        }
+        .home:hover a{
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tandoori Chicken</h1>
+    <div class="container">
+        <div class="home">
+            <a href="../index.html">Home</a>
+        </div>
+        <h1 id="heading">Tandoori Chicken</h1>
+        <img src="../images/tandoori.jpg" alt="Tandoori Chicken" width="600px" height="400px">
+        <div class="text">
+            <div class="desrciption">
+                <h2>Description</h2>
+                <p>Try this authentic tandoori chicken that's marinated in yogurt and spices, then cooked on the grill instead of a clay oven so you can make it at home. Serve with long-grain basmati rice, grilled veggies, roasted corn on the cob, and a cucumber salad.</p>
+            </div>
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 pounds chicken, cut into pieces</li>
+                    <li>1 medium lemon, juiced</li>
+                    <li>1 teaspoon salt</li>
+                    <li>1 ¼ cups plain yogurt</li>
+                    <li>½ medium onion, finely chopped</li>
+                    <li>1 clove garlic, minced</li>
+                    <li>2 teaspoons garam masala</li>
+                    <li>1 teaspoon grated fresh ginger root</li>
+                    <li>1 teaspoon cayenne pepper</li>
+                    <li>1 teaspoon orange food coloring (Optional)</li>
+                    <li>2 teaspoons finely chopped cilantro</li>
+                    <li>1 medium lemon, cut into wedges</li>
+                </ul>
+            </div>
+            <div class="directions">
+                <h2>Directions</h2>
+                <ol>
+                    <li>
+                        <h4>Step 1 -></h4>
+                        <p>Gather all ingredients.</p>
+                    </li>
+                    <li>
+                        <h4>Step 2 -></h4>
+                        <p>Remove and discard skin from chicken pieces. Cut slits into meat and place into a shallow dish. Season chicken on both sides with lemon juice and salt. Let sit for 20 minutes.</p>
+                    </li>
+                    <li>
+                        <h4>Step 3 -></h4>
+                        <p>Mix yogurt, onion, garlic, garam masala, ginger, and cayenne pepper together in a medium bowl until smooth, then stir in food coloring.</p>
+                    </li>
+                    <li>
+                        <h4>Step 4 -></h4>
+                        <p>Spread yogurt mixture over chicken, cover, and refrigerate for 6 to 24 hours (the longer the better).</p>
+                    </li>
+                    <li>
+                        <h4>Step 5 -></h4>
+                        <p>When ready to cook, preheat an outdoor grill for medium-high heat and lightly oil the grate. Remove chicken from marinade. Discard remaining marinade.</p>
+                    </li>
+                    <li>
+                        <h4>Step 6 -></h4>
+                        <p>Cook chicken on the preheated grill until no longer pink and the juices run clear. An instant-read thermometer inserted near the bone should read 165 degrees F (74 degrees C).</p>
+                    </li>
+                    <li>
+                        <h4>Step 7 -></h4>
+                        <p>Garnish with cilantro and lemon wedges.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
